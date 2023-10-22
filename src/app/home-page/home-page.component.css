@@ -1,0 +1,156 @@
+
+.container1{
+    height: 50%;
+    width:100%;
+}
+.container-section1{
+    background-image: url(https://wac-cdn.atlassian.com/dam/jcr:b968e98b-ecd5-484c-9020-98ab1135fd0d/Impossible-Alone-Video-Header-Image-@2X%202.jpg?cdnVersion=840);
+    background-repeat: no-repeat;
+    /* background-position: bottom; */
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 100px 0 165px;
+    text-align: center;
+    
+}
+
+.Inner-section1{
+    
+    display: flex;
+    position: relative;
+    max-width: 1440px;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    min-height: 0;
+    padding: 80px 0;
+    
+}
+.inner-section-content{
+    background-color: #0065ffcc;
+    height: 50%;
+    width: 47%;
+    display: inline;
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 12%;
+}
+
+.inner-section-content h1{
+    font-size: 85px;
+  width: 100%;
+    
+}
+.inner-section-content p{
+    font-size: 41px;
+    width: 100%;
+    
+}
+
+.inner-section2{
+    background-color: rgba(255, 255, 0, 0.619);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    min-height: 0;
+   
+
+}
+.inner-section-content2{
+    display: flex;
+    gap:5%;
+    padding: 2%;
+}
+.inner-section-content2 p{
+    font-weight:bold;
+
+}
+.inner-section-content2 p .inner-section-content2 span{
+    display: flex;
+    flex-direction: column;
+}
+.sub-div{
+    background-color: transparent;
+    color: #091e42;
+    padding: 64px 0;
+    text-align: center;
+    background-image: linear-gradient( 180deg, #ffffff 0.05%, #deebff 99.95% );
+}
+.image-icon-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sub-div-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-btns{
+   
+    width: 100%;
+    height: 20%;
+    padding:2%;
+    display: flex;
+    justify-content: center;
+}
+.btn-group{
+
+  gap: 5%;
+  width: 71%;
+  display: flex;
+  justify-content: center;
+}
+.btn-check{
+    border-radius: 5%;
+}
+#btn-label{
+    height: 50px;
+  width: 340px;
+  border-radius: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Mobile_view{
+    display: none;
+}
+.container2 h1{
+display: flex;
+justify-content: center;
+
+font-weight: bold;
+padding:4%;
+}
+@media screen and (max-width: 800px){
+    .Mobile_view{
+        display: block;
+    }
+    .container-btns{
+        display: none;
+    }
+    #btn-label{
+        justify-content: center;
+        margin-left:10%
+    }
+    .inner-section-content{
+        height: 50%;
+    width: 100%;
+    margin-left: 0;
+    }
+    .inner-section-content2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .img1{
+        display: none;
+    }
+
+}

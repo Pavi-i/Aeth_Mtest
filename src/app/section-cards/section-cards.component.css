@@ -1,0 +1,64 @@
+.card-section-3{
+    display: flex;
+    justify-content: space-between;
+    padding:2%;
+    gap:3%;
+    flex-wrap: nowrap;
+}
+.section-content h4{
+    color: blue;
+    font-size: larger;
+    font-weight: bold;
+
+}
+.card-section2{
+    display: flex;
+    justify-content: space-between;
+    gap:3%;
+    flex-wrap: nowrap;
+    
+    
+}
+.card-section-1{
+    display: flex;
+    justify-content: space-between;
+    gap:3%;
+    flex-wrap: nowrap;
+    padding: 2%;
+    
+}
+
+.section-1-content{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 43%;
+}
+
+.section-1-content h4{
+    color: blue;
+    font-weight: bold;
+    font-size: large; 
+}
+.section-1-content h2{
+   
+    font-weight: bold;
+    font-size: 2.5rem;; 
+}
+@media screen and (max-width: 1017px){
+.card-section-3{
+    flex-wrap: wrap;
+}
+.card-section2{
+    flex-wrap: wrap;
+}
+.card-section-1{
+    flex-wrap: wrap;
+}
+.section-1-content h2{
+    width:100%;
+    font-size: 1.5rem;
+    
+}
+}

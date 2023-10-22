@@ -1,0 +1,30 @@
+.sub-footer{
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:5%;
+  background-color: #f4f5f7;
+  padding:5%
+ 
+}
+.sub-footer-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-footer-div h3{
+    font-size: medium;
+    font-weight: bold;
+
+}
+.sub-footer-div a{
+    font-size: small;
+    text-decoration: none;
+    color: black;
+
+}
+.sub-footer-div a:hover {
+    font-size:medium;
+    text-decoration: line-through;
+    color: black;
+}
+

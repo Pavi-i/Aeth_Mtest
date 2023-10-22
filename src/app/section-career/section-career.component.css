@@ -1,0 +1,66 @@
+.section-career{
+    background-image: url(https://wac-cdn.atlassian.com/dam/jcr:76ed2bec-4e88-4341-b0ce-83ede8e68015/CareersLeft_540x450.svg?cdnVersion=1221),url(https://wac-cdn.atlassian.com/dam/jcr:d281b49a-9812-46dd-996c-e35789461eec/CareersRight_540x450.svg?cdnVersion=1221);
+    background-size: auto 100%,auto 100%;
+    background-position: bottom left,bottom right;
+    background-repeat: no-repeat,no-repeat;
+    padding-bottom: 120px;
+    background-color: transparent;
+    color: #091e42;
+    padding-top: 64px;
+    position: relative;
+}
+.container{
+    padding: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:45%
+}
+.container h4{
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+  
+}
+.container h3{
+    
+    font-weight: bold;
+    font-size: 2.7rem;
+   
+}
+
+.container span{
+    font-size: 1.5rem;
+   
+}
+.container button{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:rgb(21, 21, 234);
+    border: none;
+    padding: 2%;
+    width:40%;
+}
+
+@media screen and (max-width: 1017px){
+    .section-career{
+        background-image: url(https://wac-cdn.atlassian.com/dam/jcr:76ed2bec-4e88-4341-b0ce-83ede8e68015/CareersLeft_540x450.svg?cdnVersion=1221);
+        background-size: auto 100%,auto 100%;
+        background-position: bottom left,bottom right;
+        background-repeat: no-repeat,no-repeat;
+        padding-bottom: 120px;
+        background-color: transparent;
+        color: #091e42;
+        padding-top: 64px;
+        position: relative;
+    }
+    .container{
+        
+        width:78%
+    }
+
+}

@@ -1,0 +1,44 @@
+
+.footer{
+    background-color: #f4f5f7;
+}
+
+.language-select{
+    display: flex;
+    align-items: center;
+    gap:3%;
+    width:50%
+    
+}
+
+.container{
+    height: 50%;
+    padding:3%;
+    border-top: 1px solid black;
+   
+}
+.footer-left{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer-left a{
+    display: flex;
+    gap:2%;
+    text-decoration: none;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: end;
+    
+}
+.icons-div{
+    display: flex;
+    justify-content: end;
+   
+}
+@media screen and (max-width: 1017px){
+    .footer-left{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

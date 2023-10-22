@@ -1,0 +1,56 @@
+.container-body{
+    display:flex;
+    justify-content: space-between;
+    
+} 
+.card-div{
+    display: flex;
+    gap: 9%;
+  margin-bottom: 10%;
+}
+
+.content-sec h5 {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.content-sec p {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    
+}
+.container-section h3{
+    padding: 2%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 30%;
+}
+.card-section{
+    width:50%;
+}
+
+.card-link{
+    color:blue;
+    font-size: medium;
+    padding: 4%;
+    
+}
+@media screen and (max-width: 1017px){
+
+    
+    .container-body{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .container-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10%;
+  
+    }
+}

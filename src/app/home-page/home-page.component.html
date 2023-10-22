@@ -1,0 +1,177 @@
+<div>
+  <app-home-nav></app-home-nav>
+
+  <div class="container1">
+    <div class="container-section1">
+      <div class="Inner-section1">
+        <div class="inner-section-content">
+          <h1>Impossible Alone.</h1>
+          <p>See how collabration makes the impossible,posible</p>
+          <div style="display: flex; justify-content: center; flex-direction: row;">
+          <div style="margin-bottom: 2%"
+          class="modal-dialog modal-dialog-centered" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+             <i class="bi bi-play-circle-fill"></i>&nbsp;&nbsp;
+            play video</div
+          ></div>
+        </div>
+      </div>
+
+
+      <div class="inner-section2">
+        <div class="inner-section-content2">
+          <img
+            src="https://wac-cdn.atlassian.com/dam/jcr:e1f31cb5-84ff-4b60-99f5-f8b932c82f1e/logo_high-velocity.svg?cdnVersion=1223"
+            alt=""
+          />
+          <div style="display: flex; flex-direction: column">
+            <p>In person and on demand</p>
+            <span
+              >Tickets going fast! Save your seat at our biggest service
+              management event of the year before they’re sold out.</span
+            >
+          </div>
+          <button
+            style="
+              color: white;
+              background-color: blue;
+              border: none;
+              width: 20%;
+            "
+          >
+            Get Your Tickets
+          </button>
+          <img class="img1"
+            src="https://wac-cdn.atlassian.com/dam/jcr:d09d8bd1-4313-4048-af08-9836bc0edb94/sydney.png?cdnVersion=1223"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container2">
+    <h1 >Atlassian solutions are designed for all types of work</h1>
+    <div class="container-btns">
+      <div
+        class="btn-group"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+          checked
+          (click)="workManagement()"
+        />
+        <label class="btn btn-outline-primary" for="btnradio1" id="btn-label"
+          >Work Management</label
+        >
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio2"
+          autocomplete="off"
+          (click)="it_service()"
+        />
+        <label class="btn btn-outline-primary" for="btnradio2"
+        id="btn-label"
+          >It service Managemnt</label
+        >
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio3"
+          autocomplete="off"
+          (click)="agile_devops()"
+        />
+        <label class="btn btn-outline-primary" for="btnradio3"
+        id="btn-label"
+          >Agilea and Devops</label
+        >
+      </div>
+    </div>
+    <div class="Mobile_view" >
+        <select class="form-select" aria-label="Default select example" id="btn-label" style="background-color: blue; color: white;">
+            <option selected (click)="workManagement()" style="color: white;">Work Management</option>
+            <option value="1" (click)="it_service()"style="color: white;" >It service Managemnt</option>
+            <option value="2"  (click)="agile_devops()" style="color: white;">Agilea and Devops</option>
+           
+          </select>
+      </div>
+    <div *ngIf="show_work_management && !show_it_service && !show_agile_devops">
+      <app-section-work-life-balance></app-section-work-life-balance>
+    </div>
+    <div *ngIf="show_it_service && !show_work_management && !show_agile_devops">
+      <app-section-it-service></app-section-it-service>
+    </div>
+    <div *ngIf="show_agile_devops && !show_it_service && !show_work_management">
+      <app-section-agile-devops></app-section-agile-devops>
+    </div>
+
+    <div class="sub-div">
+      <div class="sub-div-content">
+        <span
+          >Join the 250,000+ companies that use our software to power team
+          collaboration</span
+        >
+        <a href="/customers/search" style="text-decoration: none"
+          >See all customers
+          <i class="bi bi-arrow-right" style="color: blue"></i
+        ></a>
+      </div>
+      <div class="image-icon-div">
+        <a href="/customers/kiva">
+          <img
+            src="https://wac-cdn.atlassian.com/dam/jcr:77c2f652-ab9b-4619-b175-c3f408c3e350/kiva.svg"
+            alt=""
+        /></a>
+        <a href="/customers/twitter">
+          <img
+            src="https://wac-cdn.atlassian.com/dam/jcr:0a7dd09c-7f87-4bc9-8b65-318b0a41efb8/twitter.svg"
+            alt=""
+        /></a>
+        <a href="/customers/redfin">
+          <img
+            src="https://wac-cdn.atlassian.com/dam/jcr:46501297-a5e1-482a-9f8f-3718dd24376e/redfin.svg"
+            alt=""
+        /></a>
+        <a href="/customers/nasa">
+          <img
+            src="../../assets/nasa.png"
+            alt=""
+            style="width: 50%; height: 30%"
+        /></a>
+        <a href="/customers/audi">
+          <img
+            src="https://wac-cdn.atlassian.com/dam/jcr:debe18ec-0a3d-4bfc-aa58-f11948d8d056/audi.svg"
+            alt=""
+        /></a>
+        <a href="/customers/castlight">
+          <img src="../../assets/castlight.png" alt=""
+        /></a>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div><app-section-cards></app-section-cards></div>
+  <div><app-section-career></app-section-career></div>
+  <div><app-home-sub-footer></app-home-sub-footer></div>
+
+  <div>
+    <app-home-footer></app-home-footer>
+  </div>
+  <!-----------Modal---------------------------->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <video src="url(https://www.youtube.com/watch?v=CTETwaQ1dqI)"></video>
+  </div>
+      <!--------------------------------------->
+</div>

@@ -1,0 +1,105 @@
+<div>
+<nav class="navbar">
+    <div class="left-section">
+      <div class="logo">
+        <img src="../../assets/2560px-Atlassian-logo.svg.png" alt="Logo">
+        
+      </div>
+   
+      <div class="dropdown">
+        <button class="dropbtn dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+         Products
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item " href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class=" dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+          Solutions
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class=" dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+          Resources
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-section">
+      
+        <img (click)="toggleSearch()" src="../../assets/search-icom.png" alt="">
+      
+      
+      <button style="width:30%; color: white; background-color: blue; border: none;">
+        Try
+        
+      </button>
+      <div style="border-left: 1px solid black;"></div>
+      <a style=" color: blue; font-size: small;">
+        Sign in
+      </a>
+
+    </div>
+
+    <div *ngIf="showSearch" class="search-div">
+      <div style="display: flex; justify-content: center; flex-direction: column; background-color: white;width: 100%; padding:5%">
+        <div style="display: flex; justify-content: center;">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search" style="width:50%;  margin-top:2%" ></div>
+        <div style="margin-top: 2%; display: flex; justify-content: center;">
+        <button style="display: flex; justify-content: center; color: white; background-color: blue; border: none; width:20%; height: 100%;"  >search</button></div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <div class="mobile-nav">
+    
+    
+    <!-- Page Content -->
+    <div class="container" >
+      <div *ngIf="hideMenu">
+      <div class="logo">
+        <img src="../../assets/2560px-Atlassian-logo.svg.png" alt="Logo">
+        
+      </div>
+      <div style="display: flex; justify-content: end; margin-top: -6%;">
+      <img src="../../assets/search-icom.png" alt="" (click)="toggleSearch()" >
+      <img src="../../assets/hamburger-menu-icon.png" alt="" (click)=" open_menu_tab()">
+    </div>
+  </div>
+      
+    </div>
+    <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+
+      <div class="logo" style="border-bottom: 1px solid black; padding: 3%;">
+        <img src="../../assets/2560px-Atlassian-logo.svg.png" alt="Logo">
+      </div>
+      <button (click)="close()" style="display: flex;justify-content: end; background-color:white; border: none;" >
+        <i  class="bi bi-x-square" style="color: black;"></i></button>
+<div style="display: flex;justify-content: space-between;align-items: center; padding:5%">
+     <div style="width: 20%;"> <button class="try_btn">Try</button></div>
+     <div><a style="color: blue; font-size: small;">Sign In</a></div>
+    </div>
+    <div class="MenuList">
+      <a href="#" class="w3-bar-item w3-button">Proucts</a>
+      <a href="#" class="w3-bar-item w3-button"> Solutions</a>
+      <a href="#" class="w3-bar-item w3-button">  Resources</a>
+    </div>
+    </div>
+
+  </div> 
+</div>
